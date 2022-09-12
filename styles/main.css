@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+:root{
+    --navbar-height:5.4rem
+}
+main{
+    /*margin-top: var(--navbar-height);*/
+}
+
+/*HEADER*/
+.header__container{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: var(--navbar-height);
+    padding: 0 35px;
+}
+.logo__container svg{
+    height: 30px;
+}
+.logo__container svg g{
+    fill: #FFFF;
+}
+
+.nav__container > i{
+    font-size: 2rem;
+}
+.nav__link a{
+    color: #FFFF;
+}
+.nav__link{
+    padding-bottom: 2.5rem;
+}
+.menu__hamburguer{
+    cursor: pointer;
+}
+.burguer__top,
+.burguer__medium,
+.burguer__bottom{
+    display: block;
+    border-radius: .3rem;
+    width: 22px;
+    height: 3px;
+    background-color: #ffff;
+    margin-bottom: .4rem;
+    transition: .4s;
+}
+
+.burguer__medium--active{
+    visibility: hidden;
+    transition: .1s;
+}
+.burguer__top--active{
+    transform-origin: 100%;
+    transform:rotate(-45deg);
+    transition: .4s;
+}
+.burguer__bottom--active{
+    transform-origin: 100%;
+    transform:rotate(45deg) translate(1px, 1px);
+    transition: .4s;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    min-height: calc(100vh - var(--navbar-height));
+    right:-120%;
+    top: var(--navbar-height);
+    background-color: #000000;
+    width: 447px;
+    max-width: 100vw;
+    padding: 0 3.8rem 3.8rem 3.8rem;
+    transition: .4s;
+    z-index: 1000;
+
+}
+.nav__separator{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+}
+.nav__link--main{
+    font-size: 3.6rem;
+    font-weight: 700;
+    
+}
+.nav__link--others{
+    font-size: 2.4rem;
+}
+.nav--active{
+    right: 0;
+    transition: .4s;
+}
+.hidden__logo{
+    visibility: hidden;
+    transition: .1s;
+}
+/*MAIN*/
+main{
+    min-height: calc(100vh - var(--navbar-height));
+}
+.main__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41, 65, 171);
+    background-image: url("https://www-growth.scdn.co/static/home/bursts-tablet.svg");
+    background-position: bottom;
+    background-size: 160%;
+    background-repeat: no-repeat;
+    min-height: inherit;
+}
+.main__content{
+    text-align: center;
+    padding: 40px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+
+}
+.main__content h1{
+    font-size: 4.2rem;
+    color: #1ed760;
+    margin-bottom: 1.6rem;
+}
+.main__content p{
+    color: #1ed760;
+    font-size: 1.6rem;
+    margin-bottom: 3.2rem;
+}
+.button__buy{
+    display: block;
+    padding: 1.4rem 3.2rem;
+    background-color: #1ed760;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 4rem;
+    color: rgb(41, 65, 171);
+    max-width: 246px;
+    align-self: center;
+}
+.button__buy:hover{
+    transform: scale(1.025);
+    background-color: #2DE26D;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #000000;
+    padding: 5rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+.footer__container{
+    max-width: 1170px;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.footer__container .logo__container{
+    margin-bottom: 4.5rem;
+}
+.footer__container article{
+    margin-bottom: 4.5rem;
+}
+.footer__content__links ul li a{
+    color: #FFFFFF;
+    font-size: 1.6rem;
+}
+.footer__content__links ul li{
+    padding-bottom: 1.5rem;
+}
+.footer__content__links h2{
+    font-size: 1.2rem;
+    color:#919496;
+    margin-bottom: 2.2rem;
+}
+.social__links__content{
+    display: flex;
+    gap: 1.5rem;
+    
+}
+.social__links__content .social__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2.4rem;
+    width: 44px;
+    height: 44px;
+    background-color: #222326;
+    color: #FFFFFF;
+}
+.link__footer{
+    cursor: pointer;
+}
+.link__footer:hover{
+    color: #1ed760;
+}
+.other__links--footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+    grid-column: 1 / 4;
+    gap: 5rem;
+}
+.privacy__links ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.privacy__links ul li{
+    width: max-content;
+}
+.privacy__links ul li a{
+    color: #919496;
+    font-size: 1.2rem;
+}
+.privacy__links ul li a:hover{
+    color: #2DE26D
+}
+.location{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: right;
+    min-width: max-content;
+    align-self: flex-start;
+}
+.location span{
+    color: #FFFFFF;
+}
+@media screen and (max-width:768px) {
+
+    footer{
+        justify-content: flex-start;
+    }
+}
+@media screen and (min-width:768px) {
+
+    .footer__content__links{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 4rem;
+    }
+    footer{
+        justify-content: center;
+    }
+    .main__content h1{
+        font-size: 10.4rem;
+    }
+    .main__container{
+        background-position: center;
+        background-size: 120%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .menu__hamburguer{
+        display: none;
+    }
+    .nav__separator{
+        transform: rotate(90deg) translateX(8px);
+    }
+    .header__container{
+        justify-content: space-around;
+        padding: 3rem;
+    }
+    
+    nav{
+        position: static;
+        padding: 0;
+        min-height: 0;
+        background-color: transparent;
+        width: max-content;
+    }
+    nav .logo__container{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        gap: 4.5rem;
+    }
+    .nav ul li{
+        padding: 0;
+        margin: 0;
+    }
+    .nav__link a{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .nav__link a:hover{
+        color: #1ed760;
+    }
+    .main__content h1{
+        font-size: 15.4rem;
+    }
+    .main__container p{
+        font-size: 1.8rem;
+    }
+    .main__container{
+        background-position: center;
+        background-size: 100%;
+    }
+    footer{
+        justify-content: center;
+    }
+    .footer__container{
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: 8rem;
+    }
+}
