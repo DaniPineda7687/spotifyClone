@@ -189,7 +189,7 @@ footer{
 }
 .footer__content__links ul li a{
     color: #FFFFFF;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 .footer__content__links ul li{
     padding-bottom: 1.5rem;
@@ -262,9 +262,7 @@ footer{
     }
 }
 @media screen and (min-width:768px) {
-    nav{
-        overflow: hidden;
-    }
+    
     .footer__content__links{
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -280,9 +278,18 @@ footer{
         background-position: center;
         background-size: 120%;
     }
+    .footer__content__links ul li a{
+        font-size: 1.2rem;
+    }
+    .footer__content__links h2{
+        font-size: 1.4rem;
+    }
 }
 
 @media screen and (min-width:1024px) {
+    nav{
+        overflow: hidden;
+    }
     .menu__hamburguer{
         display: none;
     }
