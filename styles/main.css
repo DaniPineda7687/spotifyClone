@@ -120,6 +120,11 @@ nav{
     visibility: hidden;
     transition: .1s;
 }
+.nav__link:hover{
+    color: #1ed760;
+}
+.nav__content .link__navbar:hover{
+}
 /*MAIN*/
 main{
     min-height: 100vh;

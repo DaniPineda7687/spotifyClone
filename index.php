@@ -24,12 +24,12 @@
             </div>
             <nav class="nav">
                 <ul class="nav__content">
-                    <li class="nav__link"><a href="" class="nav__link--main">Premium</a></li>
-                    <li class="nav__link"><a href="" class="nav__link--main">Ayuda</a></li>
-                    <li class="nav__link"><a href="" class="nav__link--main">Descargar</a></li>
+                    <li class="nav__link"><a href="" class="nav__link--main link__navbar">Premium</a></li>
+                    <li class="nav__link"><a href="" class="nav__link--main link__navbar">Ayuda</a></li>
+                    <li class="nav__link"><a href="" class="nav__link--main link__navbar">Descargar</a></li>
                     <li class="nav__link"><a class="nav__separator"></a></li>
-                    <li class="nav__link"><a href="" class="nav__link--others">Registrarse</a></li>
-                    <li class="nav__link"><a href="" class="nav__link--others">Iniciar sesión</a></li>
+                    <li class="nav__link"><a href="" class="nav__link--others link__navbar">Registrarse</a></li>
+                    <li class="nav__link"><a href="" class="nav__link--others link__navbar">Iniciar sesión</a></li>
                 </ul>
                 <div class="logo__container">
                     <a href="index.html">
