@@ -65,27 +65,27 @@
                 <article class="company__links">
                     <h2>COMPAÑIA</h2>
                     <ul>
-                        <li class="link__footer"><a href="" class="link__footer">Acerca de</a></li>
-                        <li class="link__footer"><a href="" class="link__footer">Empleo</a></li>
-                        <li class="link__footer"><a href="" class="link__footer">For the record</a></li>
+                        <li class="link__footer"><a href="" class="link__footer link__text">Acerca de</a></li>
+                        <li class="link__footer"><a href="" class="link__footer link__text">Empleo</a></li>
+                        <li class="link__footer"><a href="" class="link__footer link__text">For the record</a></li>
                     </ul>
                 </article>
                 <article class="comunity__links">
                     <h2>COMUNIDADES</h2>
                     <ul>
-                        <li class="link__footer"><a href="" class="link__footer">Servicios para artistas</a></li>
-                        <li class="link__footer"><a href="" class="link__footer">Desarrolladores</a></li>
-                        <li class="link__footer"><a href="" class="link__footer">Publicidad</a></li>
-                        <li class="link__footer"><a href="" class="link__footer">Inversionistas</a></li>
-                        <li class="link__footer"><a href="" class="link__footer">Proveedores</a></li>
+                        <li class="link__footer"><a href="" class="link__footer link__text">Servicios para artistas</a></li>
+                        <li class="link__footer"><a href="" class="link__footer link__text">Desarrolladores</a></li>
+                        <li class="link__footer"><a href="" class="link__footer link__text">Publicidad</a></li>
+                        <li class="link__footer"><a href="" class="link__footer link__text">Inversionistas</a></li>
+                        <li class="link__footer"><a href="" class="link__footer link__text">Proveedores</a></li>
                     </ul>
                 </article>
                 <article class="other__links">
                     <h2>ENLACES ÚTILES</h2>
                     <ul>
-                        <li><a href=""  class="link__footer">Ayuda</a></li>
-                        <li><a href=""  class="link__footer">Reproductor web</a></li>
-                        <li><a href=""  class="link__footer">App movil gratis</a></li>
+                        <li><a href=""  class="link__footer link__text">Ayuda</a></li>
+                        <li><a href=""  class="link__footer link__text">Reproductor web</a></li>
+                        <li><a href=""  class="link__footer link__text">App movil gratis</a></li>
                     </ul>
                 </article>
             </div>
